@@ -1,0 +1,309 @@
+/* font-family: "ArialRegular"; */
+@font-face {
+    font-family: "ArialRegular";
+    src: url("../fonts/ArialRegular/ArialRegular.eot");
+    src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
+    url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "ArialBold"; */
+@font-face {
+    font-family: "ArialBold";
+    src: url("../fonts/ArialBold/ArialBold.eot");
+    src: url("../fonts/ArialBold/ArialBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialBold/ArialBold.woff") format("woff"),
+    url("../fonts/ArialBold/ArialBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "ArialBlack"; */
+@font-face {
+    font-family: "ArialBlack";
+    src: url("../fonts/ArialBlack/ArialBlack.eot");
+    src: url("../fonts/ArialBlack/ArialBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialBlack/ArialBlack.woff") format("woff"),
+    url("../fonts/ArialBlack/ArialBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*Спецификация*/
+
+*{ box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+
+/*Header*/
+header {
+    background-color: #121212;
+    padding: 10px 390px 10px 380px;
+}
+
+.logo-container {
+    margin-left: 20px;
+}
+
+li.nav-item>a.nav-link {
+    color: #fff;
+    font-family: Arial regular;
+    font-size: 14px;
+    line-height: 11px;
+}
+
+.nav-item {
+    margin-right: 9px;
+}
+
+.border-nav-item{
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    
+}
+
+
+.btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.header__btn-container__btn {
+    background-color: #121212;
+    color: #fff;
+    padding: 10px 17px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 11px;
+}
+/*Section-main*/
+.main {
+    background: #fff;
+    padding-top: 58px;
+    padding: 58px 0 144px 0;
+}
+
+.main__ul li h1{
+    font-weight: bold;
+    font-size: 72px;
+    min-width: 700px
+}
+
+.line {
+    vertical-align: super;
+}
+
+.main__ul li .h1-bottom {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.main__ul li p{
+    font-size: 18px;
+    color: #a7a7a7;
+}
+
+.main__btn {
+    background-color: #fff;
+    height: 57px;
+    width: 256px;
+    border: 3px solid #000;
+    border-radius: 4px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 48px;
+}
+
+.fuck-img {
+    position: relative;
+    top: 112px;
+    left: 20px;
+}
+
+/*Sector-about*/
+
+.about {
+    background-color: #000;
+    padding-top: 85px;
+    padding-bottom: 106px;
+    display: flex;
+}
+
+
+.about__container-h1 {
+    background: #fff;
+    height: 109px;
+    width: 555px;
+}
+
+.about__container-h1 h1 {
+    font-size: 72px;
+    font-weight: bold;
+    color: #000;
+    padding: 10px 10px 10px 100px;
+}
+
+.we-have-h1 {
+    margin-top: 137px;
+}
+
+.about__container-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 365px;
+    
+}
+
+.about__container-text h1 {
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.about__container-text h3 {
+    font-size: 35px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.common-box-card {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 380px
+}
+
+.card-box {
+    height: 340px;
+    width: 263px;
+    background-color: #000;
+    border: 3px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.card-box h1 {
+    font-size: 115px;
+    font-family: Arial black;
+    color: #fff;
+    
+}
+
+.card-box h2 {
+    font-size: 36px;
+    color: #fff;
+    
+}
+
+.card-box p {
+    font-size: 24px;
+    color: #fff;
+    
+}
+
+/*Section-cases*/
+
+.cases {
+    padding: 100px 370px 135px;
+}
+
+.cases__background-h1 {
+    width: 555px;
+    height: 109px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 72px;
+    font-weight: bold;
+    
+}
+
+.cases__background-h1 h1 {
+    color: #fff;
+    font-size: 72px;
+    font-weight: bold;
+    
+}
+
+.common-box-case{
+    display: flex;
+    justify-content: center;
+    margin-top: 93px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-case {
+    width: 555px;
+    height: 555px;
+    background-color: #ed1c24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-case h1 {
+    font-size: 400px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.box-case-small h1 {
+    width: 360px;
+    height: 360px;
+    background-color: #ed1c24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 34px;
+    
+}
+
+.cases__text-end h1 {
+    font-weight: bold;
+    font-size: 72px;
+    color: #ed1c24;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*footer*/
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    padding: 43px;
+    
+}
