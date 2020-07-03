@@ -1,0 +1,129 @@
+/* Слайдер */
+.header__slider.slick-slider{
+	min-width: 0;
+    position: relative;
+    
+}
+/* Ограничивающая оболочка */
+.header__slider .slick-list {
+	overflow: hidden;
+    
+}
+
+/* Лента слайдов */
+.header__slider .slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Точки */
+.header__slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    position: absolute;
+    top: 74.9%;
+    left: 77%;
+}
+.header__slider .slick-dots li{
+    list-style: none;
+    margin: 0 40px;
+}
+.header__slider .slick-dots button{
+    font-size: 0;
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    border: 2px solid #4F4F4F;
+    background-color: #4F4F4F;
+    
+}
+
+/* Конкретный слайдер */
+
+.header__slider {
+	position: relative;
+}
+
+.header__slider .slick-dots li.slick-active button{
+	background-color: rgb(255, 83, 83);
+    border: 0;
+}
+
+.slider__item {
+	padding: 0px 15px;
+}
+
+.header__slider-item {
+    padding-top: 15em;
+    padding-left: 7em;
+    background-size: 100%;
+    padding-bottom: 100px;
+    
+}
+
+.header__slider-item--1 {
+    background: url(../img/background/1.jpg);
+    background-size: cover;   
+}
+
+.header__slider-item--2 {
+    background: url(../img/background/2.jpg);
+    background-size: cover;
+}   
+
+.header__slider-item--3 {
+    background: url(../img/background/3.jpg);
+    background-size: cover;
+}
+
+
+.header__item-headline h1 {
+    font-weight: bold;
+    font-size: 5.5em;
+    /* or 60px */
+    letter-spacing: 0.15em;
+    color: #4F4F4F;
+    line-height: 142.4%;
+}
+
+.header__item-text {
+    margin-top: 2.5em;
+}
+
+.header__item-text h2 {
+    font-weight: 500;
+    font-size: 1.8em;
+    line-height: 22px;
+    color: #4F4F4F;
+}
+
+.header__item-btn {
+    margin-top: 56px;
+}
+
+.header__item-btn button {
+    width: 282px;
+    height: 54px;
+    background: rgb(255, 83, 83);
+    border-radius: 3px 50px 50px 3px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    
+}
+
+.header__item-btn button:hover {
+    box-shadow: 2px 2px 15px 5px rgb(255, 83, 83);
+    transition: 0.5s;
+    background-color: rgb(255, 83, 83);
+    border-radius: 50px 50px 50px 50px;
+    transform: scale(1.030);
+}
+
