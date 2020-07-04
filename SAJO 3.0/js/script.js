@@ -34,12 +34,13 @@ $( function() {
     $( "#amount_2" ).val( $( "#slider-range" ).slider( "values", 0 ) );
   } );
 
-//// Бургер на мобильных телефонах
-//$(document).ready(function() {
-//    $('.header__burger').click(function(event) {
-//        $('.header__burger, .header__top-menu').toggleClass('active');
-//    });
-//});
+// Бургер на мобильных телефонах
+$(document).ready(function() {
+    $('.header__burger').click(function(event) {
+        $('.header__burger, .header__menu').toggleClass('active');
+    });
+});
+
 //
 ////Табы на главной
 //(function($) {
