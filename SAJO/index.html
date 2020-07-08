@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+       <meta charset="UTF-8">
+        <meta name="description" content="Стильный Интернет-Магазин SAJO">
+        <meta name="keywords" content="Интернет-магазин, одежда, стиль, мода, джентельмен">
+        <!--connecting viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Интернет-магазин спортивной одежды</title>
+
+        <!--Favicon-->
+        <link rel="shortcut icon" href="img/favicon/1616.png" type="image/x-icon">
+
+        <!--connecting styles-->
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <!--connecting fonts-->
+        <link type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!--connecting media requests-->
+        <link type="text/css" rel="stylesheet" href="css/meida/media.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav product__nav">
+               <div class="nav__logo">
+                   <img src="img/logo/sajooo.png" alt="">
+               </div>
+                <ul class="nav__menu-list">
+                     <span class="nav__burger"></span>
+                      <li class="nav__link"><a href="">Преимущества</a></li>
+                      <li class="nav__link test"><span class="open-sub">Ассортимент</span>
+                          <div class="sub-menu-block">
+                                <div class="sub-menu-block__container">
+                                    <div class="sub-menu-block__clothes">
+                                        <div class="sub-menu-block__clothes-title">
+                                            <h2>ОДЕЖДА</h2>
+                                        </div>
+                                        <div class="sub-menu-block__clothes-menu">
+                                            <ul>
+                                                <li class="li-header">МУЖСКАЯ</li>
+                                                <li><a href="">Костюмы</a></li>
+                                                <li><a href="">Брюки</a></li>
+                                                <li><a href="">Ветровки</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="sub-menu-block__shoes">
+                                        <div class="sub-menu-block__clothes-title">
+                                            <h2>ОБУВЬ</h2>
+                                        </div>
+                                        <div class="sub-menu-block__clothes-menu">
+                                            <ul>
+                                                <li class="li-header">МУЖСКАЯ</li>
+                                                <li><a href="">By Cerber</a></li>
+                                                <li><a href="">By Adidas</a></li>
+                                                <li><a href="">By Puma</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </li>
+                          <li class="nav__link"><a href="">Отзывы</a></li>
+                          <li class="nav__link"><a href="">Контакты</a></li>
+                          <li class="nav__link"><a href="">Доставка</a></li>
+                          <li class="nav__link"><a href="">Оплата</a></li>
+                      </ul>
+                      <div class="nav__user">
+                          <img class="nav__search" src="img/icons/serch.png" alt="">
+                          <img class="nav__basket" src="img/icons/shop_box.png" alt="">
+                          <img class="nav__lk" src="img/icons/li.kab.png" alt="">
+                      </div>
+                    </nav>
+                </header>
+                <section class="adress">
+                   <div class="container-range">
+                        <span class="adress">Главная / Ассортимент</span>
+                    </div>
+                </section>
+                <section class="range-content">
+                   <div class="container-range">
+                       <div class="range-content__container">
+                            <div class="filtration">
+                                <nav class= "filtration__nav">
+                                    <ul class= "filtration__list">
+                                        <li>
+                                            <span class="open__sub-filtr">Костюмы</span>
+                                            <ul class="sub-filtr">
+                                                <li>By Berdi Begmenov</li>
+                                                <li>By Berdi Begmenov</li>
+                                                <li>By Berdi Begmenov</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="open__sub-filtr-2">Брюки</span>
+                                            <ul class="sub-filtr-2">
+                                                <li>By Berdi Begmenov</li>
+                                                <li>By Berdi Begmenov</li>
+                                                <li>By Berdi Begmenov</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="open__sub-filtr-3">Ветровки</span>
+                                            <ul class="sub-filtr-3">
+                                                <li>By Berdi Begmenov</li>
+                                                <li>By Berdi Begmenov</li>
+                                                <li>By Berdi Begmenov</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="open__sub-filtr-4">Цена</span>
+                                            <ul class="sub-filtr-4">
+                                                <li class="filtration__slider">
+                                                   <div id="slider-range"></div>
+                                                    <p class="position">
+                                                      <input class="amount" type="text" id="amount" readonly>
+                                                      <input class="amount_1" type="text" id="amount_1" readonly>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="open__sub-filtr-5">Цвет</span>
+                                            <ul class="sub-filtr-5">
+                                                <li>
+                                                    <form class="filtration__form" action="#">
+                                                        <label class="label">
+                                                            <input type="radio" class="radio radio-1" name="color">
+                                                            <span class="fake-1"></span>
+                                                        </label>
+                                                        <label class="label">
+                                                            <input type="radio" class="radio radio-2" name="color">
+                                                            <span class="fake-2"></span>
+                                                        </label>
+                                                        <label class="label">
+                                                            <input type="radio" class="radio radio-3" name="color">
+                                                            <span class="fake-3"></span>
+                                                        </label>
+                                                        <label class="label">
+                                                            <input type="radio" class="radio radio-4" name="color">
+                                                            <span class="fake-4"></span>
+                                                        </label>
+                                                        <label class="label">
+                                                            <input type="radio" class="radio radio-5" name="color">
+                                                            <span class="fake-5"></span>
+                                                        </label>
+                                                        <label class="label">
+                                                            <input type="radio" class="radio radio-6" name="color">
+                                                            <span class="fake-6"></span>
+                                                        </label>
+                                                        <label class="label">
+                                                            <input type="radio" class="radio radio-7" name="color">
+                                                            <span class="fake-7"></span>
+                                                        </label>
+                                                        <label class="label">
+                                                            <input type="radio" class="radio radio-8" name="color">
+                                                            <span class="fake-8"></span>
+                                                        </label>
+                                                        <label class="label">
+                                                            <input type="radio" class="radio radio-9" name="color">
+                                                            <span class="fake-9"></span>
+                                                        </label>
+                                                        <label class="label">
+                                                            <input type="radio" class="radio radio-10" name="color">
+                                                            <span class="fake-10"></span>
+                                                        </label>
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="position-column">
+                                <div class="range-top">
+                                    <div class="range-top__type-clothes">
+                                        <h2>Костюмы</h2>
+                                    </div>
+                                    <div class="range-top__sort">
+                                        <select class="range-top__select">
+                                            <option class="range-top__option" value="1"><p>по популярности</p></option>
+                                            <option class="range-top__option" value="2"><p>по новинкам</p></option>
+                                            <option class="range-top__option" value="2"><p>по цене</p></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="range-list">
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="range-list__card">
+                                            <div class="range__card-container">
+                                                <div class="range__content-card">
+                                                   <div class="range__content-card-effect">
+                                                       <div class="range__btn-box">
+                                                            <button class="range__btn-buy">КУПИТЬ</button>
+                                                            <button class="range__btn-buy range__btn-buy-basket">Добавить в корзину</button>
+                                                        </div>
+                                                   </div>
+                                                    <div class="range__card-photo">
+                                                        <div class="range__photo-logo">
+                                                            <span class="logo">SAJO</span>
+                                                        </div>
+                                                        <picture>
+                                                            <img src="img/image/photo%20of%20shoes.svg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="range__card-description">
+                                                        <p>By Cerber / <span class="marker-gray">Кроссовки</span></p>
+                                                    </div>
+                                                    <div class="range__card-price">
+                                                    <span class="price">14 490 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                
+                    <script src="js/jQuery.js"></script>
+                    <script src="js/slick.min.js"></script>
+                    <script src="js/burger.js"></script>
+                    <script src="js/script.js"></script>
+                    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                </body>
+            </html>
